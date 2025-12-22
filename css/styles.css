@@ -1,0 +1,71 @@
+:root {
+  --primary: #f8b547;
+  --secondary: #35353a;
+  --light: #fbf9f5;
+  --dark: #2b3041;
+  --navbar-dark-bg-color: #212529;
+  --navbar-dark-hover-color: var(--secondary-color);
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.primary-bg-color {
+  background-color: var(--primary);
+}
+
+.primary-bg-color:hover {
+  background-color: var(--primary);
+}
+
+.primary-text-color {
+  color: var(--primary);
+}
+
+.secondary-bg-color {
+  background-color: var(--secondary);
+}
+
+.secondary-text-color {
+  color: var(--secondary);
+}
+
+.primary-button {
+  background-color: var(--primary);
+}
+.primary-button:hover {
+  background-color: var(--primary);
+}
+
+.navbar-sticky {
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.hero-section {
+  height: 1000px;
+  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8)),
+    url("../assets/images/header-background.jpg");
+  background-size: cover;
+}
+
+.slide {
+  width: 85%;
+  margin: 0 auto 0 auto;
+}
+@media (max-width: 992px) {
+  .navbar-sticky {
+    background-color: var(--navbar-dark-bg-color);
+  }
+  .hero-section {
+    height: 800px !important;
+    min-height: 800px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .carousel-padding {
+    padding-top: 50px;
+  }
+}
